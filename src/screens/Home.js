@@ -1,7 +1,8 @@
 import { SafeAreaView, View, FlatList } from 'react-native'
 
 import { FocusedStatusBar, ComicCard, 
-    MainHeader, HomeFooter, HeadTitle } from '../components'
+    MainHeader, HeadTitle, HomeFooter } from '../components'
+
 import { COLORS, COMICSDATA, SIZES } from '../constants'
 
 const Home = () => {
@@ -27,7 +28,7 @@ const Home = () => {
             </View>
 
             {/* Top authors section */}
-            <View style={{ position: 'absolute', bottom: 0, left: 0, right: 0, }}>
+            <View style={{ flex: 1 }}>
                 <HomeFooter />
             </View>
         </SafeAreaView>

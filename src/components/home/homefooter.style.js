@@ -2,9 +2,6 @@ import { StyleSheet } from "react-native"
 import { COLORS, FONTS, SIZES } from "../../constants"
 
 export const styles = StyleSheet.create({
-    container: {
-
-    },
     topContainer: {
         backgroundColor: COLORS.white,
         paddingHorizontal: SIZES.extraLarge,
@@ -38,7 +35,7 @@ export const styles = StyleSheet.create({
         backgroundColor: COLORS.primary,
         paddingHorizontal: SIZES.extraLarge,
         paddingVertical: SIZES.extraLarge,
-        paddingBottom: SIZES.extraLarge * 2,
+        paddingBottom: SIZES.extraLarge * 3,
         borderTopRightRadius: SIZES.extraLarge,
         borderTopLeftRadius: SIZES.extraLarge,
     },
