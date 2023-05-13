@@ -1,7 +1,7 @@
 import FocusedStatusBar from "./common/FocusedStatusBar"
 import ComicCard from "./common/cards/ComicCard"
 import MainHeader from "./common/header/MainHeader"
-import HomeAuthors from "./home/HomeAuthors"
+import HomeFooter from "./home/HomeFooter"
 import { CircleButton } from "./common/button/Buttons"
 import HeadTitle from "./common/header/HeadTitle"
 
@@ -10,6 +10,6 @@ export {
     ComicCard,
     MainHeader,
     CircleButton,
-    HomeAuthors,
+    HomeFooter,
     HeadTitle,
 }

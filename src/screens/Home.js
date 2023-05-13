@@ -1,6 +1,7 @@
-import { SafeAreaView, View, FlatList, Text } from 'react-native'
+import { SafeAreaView, View, FlatList } from 'react-native'
 
-import { FocusedStatusBar, ComicCard, MainHeader, HomeAuthors, HeadTitle } from '../components'
+import { FocusedStatusBar, ComicCard, 
+    MainHeader, HomeFooter, HeadTitle } from '../components'
 import { COLORS, COMICSDATA, SIZES } from '../constants'
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
 
             <MainHeader />
 
-            <View style={{ flex: 1, padding: SIZES.large, marginVertical: SIZES.large }}>
+            <View style={{ padding: SIZES.large, marginVertical: SIZES.large }}>
                 <HeadTitle 
                     textColor={COLORS.darkGray} 
                     titleText="Trending Comic" 
@@ -26,12 +27,9 @@ const Home = () => {
             </View>
 
             {/* Top authors section */}
-
-            <View style={{ flex: 1, position: 'absolute', bottom: 0, left: 0, right: 0, }}>
-                <HomeAuthors />
+            <View style={{ position: 'absolute', bottom: 0, left: 0, right: 0, }}>
+                <HomeFooter />
             </View>
-
-
         </SafeAreaView>
     )
 }

@@ -38,6 +38,7 @@ export const styles = StyleSheet.create({
         backgroundColor: COLORS.primary,
         paddingHorizontal: SIZES.extraLarge,
         paddingVertical: SIZES.extraLarge,
+        paddingBottom: SIZES.extraLarge * 2,
         borderTopRightRadius: SIZES.extraLarge,
         borderTopLeftRadius: SIZES.extraLarge,
     },

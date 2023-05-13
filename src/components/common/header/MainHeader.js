@@ -9,7 +9,7 @@ const MainHeader = () => {
         <View style={styles.container}>
             <View style={styles.topContainer}>
                 <View style={styles.left}>
-                    <View style={styles.imageContainer}>
+                    <TouchableOpacity style={styles.imageContainer}>
                         <Image 
                             style={styles.profileImage}
                             resizeMode='contain'
@@ -18,7 +18,7 @@ const MainHeader = () => {
                         <View style={styles.notificationCount}>
                             <Text style={styles.notifivationText}>2</Text>
                         </View>
-                    </View>
+                    </TouchableOpacity>
 
                     <View style={styles.infoContainer}>
                         <Text style={styles.labeltext}>Hello,</Text>

@@ -1,10 +1,10 @@
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
-import { styles } from './homeauthors.style'
+import { styles } from './homefooter.style'
 
 import HeadTitle from '../common/header/HeadTitle'
 import { icons, images, COLORS } from '../../constants'
 
-const HomeAuthors = () => {
+const HomeFooter = () => {
     return (
         <View style={styles.container}>
             <View style={styles.topContainer}>
@@ -84,4 +84,4 @@ const HomeAuthors = () => {
     )
 }
 
-export default HomeAuthors
+export default HomeFooter
