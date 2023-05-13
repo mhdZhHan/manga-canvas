@@ -1,0 +1,13 @@
+Font Family :ubuntu
+Font-Link :https://design.ubuntu.com/font/
+Font Size -----------
+	H1 :	24px
+	H2 :	20px
+	H3 :	16px
+	H4 :	14px
+	H5 :	12px
+
+COLORS ---------------
+Button color linear :#FA866B
+background color :#F5F5F5
+dark grey :#334148
