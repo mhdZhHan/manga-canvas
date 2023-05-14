@@ -1,8 +1,8 @@
 import { View } from 'react-native'
 
-export default function Separator({ height, width, ...extraProps }) {
+export default function Separator({ height, width, ...props }) {
     return (
-        <View style={{height: height, width: width}} />
+        <View style={{ height: height, width: width, ...props }} />
     )
 }
 

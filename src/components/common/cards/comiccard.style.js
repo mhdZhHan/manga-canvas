@@ -2,15 +2,17 @@ import { StyleSheet } from "react-native"
 import { COLORS, FONTS, SIZES } from "../../../constants"
 
 export const styles = StyleSheet.create({
-    cardContainer: (index, length) => ({
-        marginRight: index < length -1 ? SIZES.large : 0
+    cardContainer: (index, length, grid=false) => ({
+        flex: grid ? 1 : 0,
+        margin: grid ? SIZES.large : 0,
+        marginRight: index < length -1 && !grid ? SIZES.large : grid ? SIZES.large : 0,
     }),
-    cardImage: {
-        width: 150,
-        height: 200,
+    cardImage: (grid) => ({
+        width: grid ? '100%' : 150,
+        height: grid ? 250 : 200,
         borderRadius: SIZES.large,
         marginBottom: SIZES.font,
-    },
+    }),
     cardTitle: {
         fontSize: SIZES.font,
         fontFamily: FONTS.ubuntuBold,

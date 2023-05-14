@@ -1,14 +1,14 @@
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { styles } from './comiccard.style'
 
-const ComicCard = ({ data, index, arrLength }) => {
+const ComicCard = ({ data, index, arrLength, grid }) => {
     return (
-        <View style={styles.cardContainer(index, arrLength)}>
+        <View style={styles.cardContainer(index, arrLength, grid)}>
             <TouchableOpacity activeOpacity={.8}>
                 <Image 
                     source={data.image}
                     resizeMode='cover'
-                    style={styles.cardImage}
+                    style={styles.cardImage(grid)}
                 />
             </TouchableOpacity>
             

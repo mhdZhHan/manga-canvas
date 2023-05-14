@@ -19,11 +19,18 @@ const Home = ({ navigation }) => {
                 <HeadTitle 
                     textColor={COLORS.darkGray} 
                     titleText="Trending Comic" 
+                    handlePress={() => navigation.navigate('Comics')}
                 />
 
                 <FlatList 
                     data={COMICSDATA}
-                    renderItem={({ item, index }) => <ComicCard data={item} index={index} arrLength={COMICSDATA.length} />}
+                    renderItem={({ item, index }) => 
+                        <ComicCard 
+                            data={item} 
+                            index={index} 
+                            arrLength={COMICSDATA.length} 
+                            type="normal"
+                    />}
                     keyExtractor={(item) => item.id}
                     horizontal
                     showsHorizontalScrollIndicator={false}

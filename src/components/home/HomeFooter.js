@@ -13,7 +13,11 @@ const TopAuthors = () => {
                 titleText="Top Authors" 
             />
 
-            <ScrollView horizontal contentContainerStyle={styles.listContainer}>
+            <ScrollView 
+                horizontal 
+                contentContainerStyle={styles.listContainer}
+                showsHorizontalScrollIndicator={false}
+            >
                 <View style={styles.authorContainer(1)}>
                     <TouchableOpacity>
                         <Image 

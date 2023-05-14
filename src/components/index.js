@@ -7,6 +7,8 @@ import SelectFilter from "./common/SelectFilter"
 import HomeFooter from "./home/HomeFooter"
 import { CircleButton } from "./common/button/Buttons"
 import HeadTitle from "./common/header/HeadTitle"
+import ProfileHeader from "./profile/ProfileHeader"
+import ProfileDetails from "./profile/ProfileDetails"
 
 export {
     FocusedStatusBar,
@@ -18,4 +20,6 @@ export {
     SearchBox,
     SelectFilter,
     ComicCard2,
+    ProfileHeader,
+    ProfileDetails,
 }

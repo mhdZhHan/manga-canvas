@@ -2,6 +2,7 @@ export default {
     cloudDwnld: require('../assets/icons/cloud-dwnld.png'),
     cloudDwnld2: require('../assets/icons/cloud-dwnld2.png'),
     downArrow: require('../assets/icons/down-arrow.png'),
+    leftArrow: require('../assets/icons/back.png'),
     love: require('../assets/icons/love.png'),
     menu: require('../assets/icons/menu.png'),
     search: require('../assets/icons/search.png'),
@@ -9,4 +10,6 @@ export default {
     settings: require('../assets/icons/settings.png'),
     settings2: require('../assets/icons/settings2.png'),
     star: require('../assets/icons/star.png'),
+    dotMenu: require('../assets/icons/dots.png'),
+    option: require('../assets/icons/option.png'),
 }
