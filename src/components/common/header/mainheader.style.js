@@ -2,16 +2,10 @@ import { StyleSheet, StatusBar } from "react-native"
 import { COLORS, SIZES, FONTS } from "../../../constants"
 
 export const styles = StyleSheet.create({
-    container: {
-        padding: SIZES.large,
-        width: '100%',
-    },
-    topContainer: {
-
-    },
-    left: {
+    headerContainer: {
         flexDirection: 'row',
         alignItems: 'center',
+        marginTop: SIZES.large,
     },
     imageContainer: {
         width: 54,
@@ -55,19 +49,4 @@ export const styles = StyleSheet.create({
         fontSize: SIZES.large,
         fontFamily: FONTS.ubuntuBold,
     },
-    inputContainer: {
-        marginTop: SIZES.extraLarge,
-        paddingHorizontal: SIZES.font,
-        borderRadius: SIZES.font,
-        width: '100%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        backgroundColor: COLORS.white,
-    },
-    inputStyle: {
-        flex: 1, 
-        color: COLORS.darkGray,
-        fontSize: SIZES.font,
-        fontFamily: FONTS.ubuntuRegular,
-    }
 })
