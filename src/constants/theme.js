@@ -48,6 +48,29 @@ const SHADOWS = {
 		shadowRadius: 5.84,
 		elevation: 5,
 	},
+
+	light: {
+		shadowColor: '#74858C',
+		shadowOffset: {
+		  width: 0,
+		  height: 1,
+		},
+		shadowOpacity: 0.22,
+		shadowRadius: 2.22,
+	
+		elevation: 3,
+	},
+	dark: {
+		shadowColor: COLORS.gray,
+		shadowOffset: {
+		  width: 0,
+		  height: 7,
+		},
+		shadowOpacity: 0.41,
+		shadowRadius: 9.11,
+	
+		elevation: 14,
+	},
 }
 
 export { COLORS, FONTS, SIZES, SHADOWS }

@@ -17,7 +17,7 @@ const theme = {
 const Navigators = () => {
     return (
         <NavigationContainer theme={theme}>
-            <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Home">
+            <Stack.Navigator screenOptions={{ headerShown: false }} initialRouteName="Comics">
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Comics" component={Comics} />
                 <Stack.Screen name="Profile" component={Profile} />
