@@ -28,7 +28,7 @@ const MainHeader = () => {
 
             <CircleButton 
                 imgUrl={icons.menu} 
-                top={SIZES.large * 2 + 3} 
+                top={SIZES.large * 2 + 4} 
                 right={SIZES.large} 
             />
         </Fragment>
