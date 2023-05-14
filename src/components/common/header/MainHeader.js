@@ -5,11 +5,14 @@ import { styles } from './mainheader.style'
 import { CircleButton } from '../button/Buttons'
 import { SIZES, icons, images } from '../../../constants'
 
-const MainHeader = () => {
+const MainHeader = ({ navigation }) => {
     return (
         <Fragment>
             <View style={styles.headerContainer}>
-                <TouchableOpacity style={styles.imageContainer}>
+                <TouchableOpacity 
+                    style={styles.imageContainer}
+                    onPress={()=> navigation.navigate('Profile')}
+                >
                     <Image 
                         style={styles.profileImage}
                         resizeMode='contain'

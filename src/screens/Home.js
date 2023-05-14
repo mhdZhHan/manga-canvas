@@ -5,13 +5,13 @@ import { FocusedStatusBar, ComicCard,
 
 import { COLORS, COMICSDATA, SIZES } from '../constants'
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.secondary }}>
             <FocusedStatusBar backgroundColor={COLORS.secondary} barStyle='dark-content' />
 
             <View style={{ padding: SIZES.large, width: '100%' }}>
-                <MainHeader />
+                <MainHeader navigation={navigation} />
                 <SearchBox />
             </View>
 

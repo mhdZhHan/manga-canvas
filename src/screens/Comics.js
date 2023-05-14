@@ -3,13 +3,13 @@ import { View, SafeAreaView, FlatList } from 'react-native'
 import { FocusedStatusBar, MainHeader, SelectFilter, ComicCard2 } from '../components'
 import { COLORS, COMICSDATA, SIZES } from '../constants'
 
-const Comics = () => {
+const Comics = ({ navigation }) => {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.secondary }}>
             <FocusedStatusBar backgroundColor={COLORS.secondary} barStyle="dark-content" />
 
             <View style={{ padding: SIZES.large, width: '100%' }}>
-                <MainHeader />
+                <MainHeader navigation={navigation} />
                 <SelectFilter />
             </View>
 
