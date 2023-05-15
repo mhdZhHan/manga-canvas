@@ -1,9 +1,9 @@
+import { useRef, Fragment } from 'react'
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import { styles } from './homefooter.style'
 
 import HeadTitle from '../common/header/HeadTitle'
 import { icons, images, COLORS } from '../../constants'
-import { Fragment } from 'react'
 
 const TopAuthors = () => {
     return (
