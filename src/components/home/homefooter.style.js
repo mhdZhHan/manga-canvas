@@ -11,7 +11,6 @@ export const styles = StyleSheet.create({
     },
     listContainer: {
         flexGrow: 1,
-        backgroundColor: 'red',
         justifyContent: 'center',
         alignItems: 'center',
     },
