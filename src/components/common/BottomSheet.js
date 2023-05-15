@@ -32,7 +32,7 @@ const BottomSheet = () => {
             </View>
 
             <View style={styles.optionContainer}>
-                <TouchableOpacity style={styles.option(selectedOption)}>
+                <TouchableOpacity style={styles.option(selectedOption)} activeOpacity={.8}>
                     <Image 
                         source={icons.love}
                         resizeMode='contain'
@@ -42,7 +42,7 @@ const BottomSheet = () => {
                     <Text style={styles.optionName(selectedOption)}>favorite</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.option()}>
+                <TouchableOpacity style={styles.option()} activeOpacity={.8}>
                     <Image 
                         source={icons.settings}
                         resizeMode='contain'
@@ -52,7 +52,7 @@ const BottomSheet = () => {
                     <Text style={styles.optionName()}>Settings</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.option()}>
+                <TouchableOpacity style={styles.option()} activeOpacity={.8}>
                     <Image 
                         source={icons.notification}
                         resizeMode='contain'
@@ -62,7 +62,7 @@ const BottomSheet = () => {
                     <Text style={styles.optionName()}>Notification</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.option()}>
+                <TouchableOpacity style={styles.option()} activeOpacity={.8}>
                     <Image 
                         source={icons.menu}
                         resizeMode='contain'
@@ -72,7 +72,7 @@ const BottomSheet = () => {
                     <Text style={styles.optionName()}>Menu</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.option()}>
+                <TouchableOpacity style={styles.option()} activeOpacity={.8}>
                     <Image 
                         source={icons.menu}
                         resizeMode='contain'
@@ -82,7 +82,7 @@ const BottomSheet = () => {
                     <Text style={styles.optionName()}>Notification</Text>
                 </TouchableOpacity>
 
-                <TouchableOpacity style={styles.option()}>
+                <TouchableOpacity style={styles.option()} activeOpacity={.8}>
                     <Image 
                         source={icons.menu}
                         resizeMode='contain'
