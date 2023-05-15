@@ -33,6 +33,7 @@ const MainHeader = ({ navigation }) => {
                 imgUrl={icons.menu} 
                 top={SIZES.large * 2 + 4} 
                 right={SIZES.large} 
+                handlepress={() => navigation.navigate('Comics')}
             />
         </Fragment>
     )
