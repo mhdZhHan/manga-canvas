@@ -9,6 +9,7 @@ import { CircleButton } from "./common/button/Buttons"
 import HeadTitle from "./common/header/HeadTitle"
 import ProfileHeader from "./profile/ProfileHeader"
 import ProfileDetails from "./profile/ProfileDetails"
+import BottomSheet from "./common/BottomSheet"
 
 export {
     FocusedStatusBar,
@@ -22,4 +23,5 @@ export {
     ComicCard2,
     ProfileHeader,
     ProfileDetails,
+    BottomSheet,
 }

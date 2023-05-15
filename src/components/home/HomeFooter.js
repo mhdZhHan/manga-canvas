@@ -1,4 +1,4 @@
-import { useRef, Fragment } from 'react'
+import { Fragment } from 'react'
 import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import { styles } from './homefooter.style'
 
@@ -59,7 +59,7 @@ const TopAuthors = () => {
     )
 }
 
-const UserBox = () => {
+const UserBox = ({ openModalize }) => {
     return (
         <View style={styles.bottomContainer}>
             <HeadTitle 
@@ -79,7 +79,7 @@ const UserBox = () => {
                         <Text style={styles.chapterCount}>Chapter 201</Text>
                     </View>
                 </View>
-                <TouchableOpacity style={styles.arrowButton}>
+                <TouchableOpacity style={styles.arrowButton} onPress={openModalize}>
                     <Image 
                         source={icons.downArrow}
                         resizeMode='contain'
@@ -91,11 +91,11 @@ const UserBox = () => {
     )
 }
 
-const HomeFooter = () => {
+const HomeFooter = ({ openModalize }) => {
     return (
         <Fragment>
             <TopAuthors />
-            <UserBox />
+            <UserBox openModalize={openModalize} />
         </Fragment>
     )
 }
