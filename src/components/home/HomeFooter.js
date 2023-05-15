@@ -45,7 +45,7 @@ const TopAuthors = () => {
                     </TouchableOpacity>
                     <Text style={styles.authorName}>Miller</Text>
                 </View>
-                <View style={styles.authorContainer(1)}>
+                <View style={[styles.authorContainer(1), { marginRight: 0 }]}>
                     <TouchableOpacity>
                         <Image 
                             style={styles.authorImage}
