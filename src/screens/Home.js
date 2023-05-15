@@ -54,11 +54,18 @@ const Home = ({ navigation }) => {
                 ref={modalizeRef}
                 snapPoint={500}
                 modalHeight={500}
+                avoidKeyboardLikeIOS
+                // adjustToContentHeight={true}
+                scrollViewProps={{
+                    scrollEnabled: false
+                }}
                 modalStyle={{
                     width: Display.setWidth(85),
                     height: Display.setHeight(60),
                     alignSelf: 'center',
                     backgroundColor: COLORS.white,
+                    borderTopLeftRadius: SIZES.large + 8,
+                    borderTopRightRadius: SIZES.large + 8,
                 }}
                 >
                 <BottomSheet />

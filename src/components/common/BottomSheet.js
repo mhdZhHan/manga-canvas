@@ -87,7 +87,6 @@ const BottomSheet = () => {
                         source={icons.menu}
                         resizeMode='contain'
                         style={styles.optionIcon}
-                        scrollEnabled={false}
                     />
 
                     <Text style={styles.optionName()}>New stuff</Text>
